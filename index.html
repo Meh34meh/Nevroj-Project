@@ -57,13 +57,13 @@
     </style>
     <script>
         function showSection(sectionId) {
-            // Tüm bölümleri gizle
+            // TÃ¼m bÃ¶lÃ¼mleri gizle
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => {
                 section.classList.remove('active');
             });
 
-            // İlgili bölümü göster
+            // Ãlgili bÃ¶lÃ¼mÃ¼ gÃ¶ster
             const activeSection = document.getElementById(sectionId);
             if (activeSection) {
                 activeSection.classList.add('active');
@@ -72,26 +72,26 @@
     </script>
 </head>
 <body>
-    <!-- Menü -->
+    <!-- MenÃ¼ -->
     <div class="menu">
         <a onclick="showSection('anasayfa')">Ana Sayfa</a>
         <a onclick="showSection('makaleler')">Makaleler</a>
         <a onclick="showSection('projeler')">Projeler</a>
         <a onclick="showSection('nft-galerisi')">NFT Galerisi</a>
         <a onclick="showSection('token')">Token</a>
-        <a onclick="showSection('cuzdan')">Cüzdanını Bağla</a>
+        <a onclick="showSection('cuzdan')">CÃ¼zdanÃ½nÃ½ BaÃ°la</a>
     </div>
 
-    <!-- İçerik -->
+    <!-- ÃÃ§erik -->
     <div class="content">
         <div id="anasayfa" class="section active">
             <h2>Ana Sayfa</h2>
-            <p>Topluluk olarak neden buradayız? Kısaca açıklayalım...</p>
+            <p>Topluluk olarak neden buradayÃ½z? KÃ½saca aÃ§Ã½klayalÃ½m...</p>
         </div>
         <div id="makaleler" class="section">
             <h2>Makaleler</h2>
-            <a href="#">Uygarlık Dönüşümü</a>
-            <a href="#">Doğanın Dönüşümü</a>
+            <a href="#">UygarlÃ½k DÃ¶nÃ¼Ã¾Ã¼mÃ¼</a>
+            <a href="#">DoÃ°anÃ½n DÃ¶nÃ¼Ã¾Ã¼mÃ¼</a>
         </div>
         <div id="projeler" class="section">
             <h2>Projeler</h2>
@@ -105,12 +105,12 @@
         </div>
         <div id="token" class="section">
             <h2>Token</h2>
-            <p>Token açıklaması ve işlemleri buraya eklenecek.</p>
-            <a href="#">Token Satın Al</a>
+            <p>Token aÃ§Ã½klamasÃ½ ve iÃ¾lemleri buraya eklenecek.</p>
+            <a href="#">Token SatÃ½n Al</a>
         </div>
         <div id="cuzdan" class="section">
-            <h2>Cüzdanını Bağla</h2>
-            <p>Bilinen cüzdan sağlayıcıları ile bağlanabilirsiniz.</p>
+            <h2>CÃ¼zdanÃ½nÃ½ BaÃ°la</h2>
+            <p>Bilinen cÃ¼zdan saÃ°layÃ½cÃ½larÃ½ ile baÃ°lanabilirsiniz.</p>
         </div>
     </div>
 </body>
