@@ -1,117 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nevroj Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .menu {
-            background-color: #333;
-            padding: 10px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-        .menu a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .menu a:hover {
-            color: #f0a500;
-        }
-        .content {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Yatayda ortalar */
-            justify-content: center; /* Dikeyde ortalar */
-            text-align: center; /* Metni ortalar */
-        }
-        .section {
-            display: none;
-            margin-top: 20px;
-        }
-        .section.active {
-            display: block;
-        }
-        .section h2 {
-            color: #333;
-        }
-        .section a {
-            text-decoration: none;
-            color: #0073e6;
-            display: block;
-            margin-bottom: 10px;
-        }
-        .section a:hover {
-            text-decoration: underline;
-        }
-    </style>
-    <script>
-        function showSection(sectionId) {
-            // Tüm bölümleri gizle
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-
-            // Ýlgili bölümü göster
-            const activeSection = document.getElementById(sectionId);
-            if (activeSection) {
-                activeSection.classList.add('active');
-            }
-        }
-    </script>
+    <title>Nevroj Projesi</title>
 </head>
-<body>
-    <!-- Menü -->
-    <div class="menu">
-        <a onclick="showSection('anasayfa')">Ana Sayfa</a>
-        <a onclick="showSection('makaleler')">Makaleler</a>
-        <a onclick="showSection('projeler')">Projeler</a>
-        <a onclick="showSection('nft-galerisi')">NFT Galerisi</a>
-        <a onclick="showSection('token')">Token</a>
-        <a onclick="showSection('cuzdan')">Cüzdanýný Baðla</a>
-    </div>
-
-    <!-- Ýçerik -->
-    <div class="content">
-        <div id="anasayfa" class="section active">
-            <h2>Ana Sayfa</h2>
-            <p>Topluluk olarak neden buradayýz? Kýsaca açýklayalým...</p>
-        </div>
-        <div id="makaleler" class="section">
-            <h2>Makaleler</h2>
-            <a href="#">Uygarlýk Dönüþümü</a>
-            <a href="#">Doðanýn Dönüþümü</a>
-        </div>
-        <div id="projeler" class="section">
-            <h2>Projeler</h2>
-            <a href="#">Proje 1</a>
-            <a href="#">Proje 2</a>
-        </div>
-        <div id="nft-galerisi" class="section">
-            <h2>NFT Galerisi</h2>
-            <a href="#">NFT 1</a>
-            <a href="#">NFT 2</a>
-        </div>
-        <div id="token" class="section">
-            <h2>Token</h2>
-            <p>Token açýklamasý ve iþlemleri buraya eklenecek.</p>
-            <a href="#">Token Satýn Al</a>
-        </div>
-        <div id="cuzdan" class="section">
-            <h2>Cüzdanýný Baðla</h2>
-            <p>Bilinen cüzdan saðlayýcýlarý ile baðlanabilirsiniz.</p>
-        </div>
-    </div>
+<body style="text-align: center; margin-top: 20px;">
+    <h1>Nevroj Projesine Hoş Geldiniz</h1>
+    <p>Bu sayfa test amaçlı olarak hazırlanmıştır.</p>
+    <img src="https://via.placeholder.com/300" alt="Test Görseli" style="margin-top: 20px;">
 </body>
 </html>
