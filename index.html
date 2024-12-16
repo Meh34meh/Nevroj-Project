@@ -1,13 +1,144 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nevroj Projesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0c1e3c;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1b263b;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #00d9ff;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #112240;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        section.active {
+            display: block;
+        }
+        h1, h2 {
+            color: #00d9ff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #173b5c;
+            border-radius: 4px;
+        }
+        .nft-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .nft-card {
+            background-color: #173b5c;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #1b263b;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('section').forEach(section => section.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
 </head>
-<body style="text-align: center; margin-top: 20px;">
-    <h1>Nevroj Projesine Hoş Geldiniz</h1>
-    <p>Bu sayfa test amaçlı olarak hazırlanmıştır.</p>
-    <img src="https://via.placeholder.com/300" alt="Test Görseli" style="margin-top: 20px;">
+<body>
+    <header>
+        <h1>Nevroj Projesi</h1>
+        <nav>
+            <a href="#" onclick="showSection('home')">Ana Sayfa</a>
+            <a href="#" onclick="showSection('articles')">Makaleler</a>
+            <a href="#" onclick="showSection('projects')">Projeler</a>
+            <a href="#" onclick="showSection('nft-gallery')">NFT Galerisi</a>
+            <a href="#" onclick="showSection('token')">Token</a>
+        </nav>
+    </header>
+
+    <!-- Ana Sayfa -->
+    <section id="home" class="active">
+        <h2>Yeni Bir Geleceğe Hoş Geldiniz</h2>
+        <p>Teknolojinin insanlıkla buluştuğu bu çağda, yapay zeka ile yeni bir medeniyetin temellerini birlikte atıyoruz.</p>
+        <img src="ai-image.png" alt="Yapay Zeka Görseli" style="max-width: 100%; border-radius: 8px;">
+    </section>
+
+    <!-- Makaleler -->
+    <section id="articles">
+        <h2>Makaleler</h2>
+        <ul>
+            <li><b>Bilim</b>: Bilimin insanlık için dönüştürücü rolü...</li>
+            <li><b>Doğa</b>: Doğa ve sürdürülebilir yaşam üzerine...</li>
+            <li><b>Yapay Zeka</b>: Yapay zekanın dünyamıza etkileri...</li>
+            <li><b>İnsanlığın Dönüşümü</b>: Yeni bir medeniyetin temelleri...</li>
+        </ul>
+    </section>
+
+    <!-- Projeler -->
+    <section id="projects">
+        <h2>Projeler</h2>
+        <ul>
+            <li><b>Veri Analizi</b>: Verilerin geri dönüştürülebilirliği üzerine...</li>
+            <li><b>Blok Zincir</b>: Blok zincir teknolojisi ve yenilikçi kullanımı...</li>
+        </ul>
+    </section>
+
+    <!-- NFT Galerisi -->
+    <section id="nft-gallery">
+        <h2>NFT Galerisi</h2>
+        <div class="nft-grid">
+            <div class="nft-card">
+                <p>NFT 1</p>
+            </div>
+            <div class="nft-card">
+                <p>NFT 2</p>
+            </div>
+            <!-- Daha fazla NFT ekleyin -->
+        </div>
+    </section>
+
+    <!-- Token -->
+    <section id="token">
+        <h2>Token Sayfası</h2>
+        <p>Token swap ve cüzdan bağlama işlemleri için bu alanda çalışabilirsiniz.</p>
+    </section>
+
+    <footer>
+        Nevroj Projesi © 2024
+    </footer>
 </body>
 </html>
